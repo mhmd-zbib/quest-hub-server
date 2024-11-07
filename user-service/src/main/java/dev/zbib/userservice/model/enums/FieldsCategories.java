@@ -1,0 +1,15 @@
+package dev.zbib.userservice.model.enums;
+
+public enum FieldsCategories {
+    JAVA,
+    PYTHON,
+    DATA_SCIENCE,
+    ARTIFICIAL_INTELLIGENCE,
+    MACHINE_LEARNING,
+    CYBER_SECURITY,
+    BLOCKCHAIN,
+    DIGITAL_MARKETING,
+    FRONTEND_DEVELOPMENT,
+    BACKEND_DEVELOPMENT,
+    CLOUD_COMPUTING
+}
