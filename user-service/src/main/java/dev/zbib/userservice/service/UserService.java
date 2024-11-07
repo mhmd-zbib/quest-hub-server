@@ -25,7 +25,6 @@ public class UserService {
                 .username(request.getUsername())
                 .email(request.getEmail())
                 .password(request.getPassword())
-                .phone(request.getPhone())
                 .createdAt(LocalDateTime.now())
                 .build();
         userRepository.save(user);
@@ -40,7 +39,6 @@ public class UserService {
                 .lastName(user.getLastName())
                 .username(user.getUsername())
                 .email(user.getEmail())
-                .phone(user.getPhone())
                 .build();
     }
 

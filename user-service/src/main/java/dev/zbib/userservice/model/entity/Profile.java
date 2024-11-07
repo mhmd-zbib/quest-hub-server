@@ -1,5 +1,6 @@
 package dev.zbib.userservice.model.entity;
 
+import dev.zbib.userservice.model.enums.FieldsCategories;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,18 +21,22 @@ public class Profile {
 
     @Id
     private Long id;
-    private int reputationScore = 0;
     private String bio;
     private String status;
-    private String fieldOfStudy;
+    private Long domainId;
 
-    @OneToMany(mappedBy = "profile")
-    private Set<Skill> skills;
-
-    @OneToMany(mappedBy = "profile")
-    private Set<Interest> interest;
-    private String currentStudies;
+    private int reputationScore = 0;
     private String degree;
     private String location;
+
+    @ElementCollection
+    @Enumerated(EnumType.STRING)
+    private Set<FieldsCategories> skills;
+
+    @ElementCollection
+    private Set<Long> fields;
+
+    @ElementCollection
+    private Set<Long> topics;
 
 }
