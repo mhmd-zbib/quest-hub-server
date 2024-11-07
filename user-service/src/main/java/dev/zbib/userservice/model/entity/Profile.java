@@ -32,8 +32,6 @@ public class Profile {
     private Set<Interest> interest;
     private String currentStudies;
     private String degree;
-
     private String location;
-
 
 }
