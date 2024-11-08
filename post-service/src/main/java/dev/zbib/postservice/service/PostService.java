@@ -16,7 +16,7 @@ public class PostService {
         Long userId = request.getUserId();
         Long fieldId = request.getFieldId();
         Long domainId = request.getDomainId();
-        Long topicId = request.getTopicId();    
+        Long topicId = request.getTopicId();
         String content = request.getContent();
 
 

@@ -27,6 +27,6 @@ public class User {
     private boolean isEmailVerified;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Profile userProfile;
+    private Profile profile;
 
 }

@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class PostRequest {
+
     private String content;
     private Long userId;
     private Long domainId;

@@ -16,6 +16,7 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @Builder
 public class Post {
+
     @Id
     @GeneratedValue
     private Long id;
